@@ -48,12 +48,12 @@ pipeline {
 
       success{
 
-          echo "i will run if success"
+          echo "i will run if pipeline success"
       }
       
       failure{
          
-         echo "i will run if it failure"
+         echo "i will run if it pipeline failure"
 
        }
     }
