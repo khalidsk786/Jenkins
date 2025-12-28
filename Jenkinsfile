@@ -8,21 +8,17 @@ pipeline {
     COURSE = "jankins"
   }
     stages {
-       
        stage ('build')
        {
          steps {
            script{
-           sh"""
-           echo "this is building"
-           echo $COURSE
-           """sh
+              sh"""
+                  echo "this is building"
+                  echo $COURSE
+              """sh
            }
-
          }
- 
-
-       }
+      }
 
        
        stage ('test')
