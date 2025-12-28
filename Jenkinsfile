@@ -26,7 +26,6 @@ pipeline {
          }
         
        }
-
        
        stage ('deploy')
        { 
@@ -38,13 +37,25 @@ pipeline {
         
        }
 
+     }
 
+   post{
 
+      always{
 
+        echo "always run whether it is susccess or filure"
+      }
 
+      susccess{
 
+          echo "i will run if success"
+      }
+      
+      failure{
+         
+         echo "i will run if it failure"
+
+       }
     }
-
-
 
 }
