@@ -13,10 +13,10 @@ pipeline {
        {
          steps {
            script{
-          sh"""
-          echo "this is building"
-          echo $COURSE
-          """sh
+           sh"""
+           echo "this is building"
+           echo $COURSE
+           """sh
            }
 
          }
