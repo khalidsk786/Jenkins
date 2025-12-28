@@ -11,11 +11,12 @@ pipeline {
        stage ('build')
        {
          steps {
-           script{
+           script {
               sh """
                   echo "this is building"
                   echo $COURSE
-              """ sh
+              """
+      
            }
          }
       }
