@@ -3,10 +3,9 @@ pipeline {
     node {
     label 'Agent-1'
     }
-
-  environment{
+   }
+    environment{
     COURSE = "jankins"
-  }
   }
     stages {
        
