@@ -46,7 +46,7 @@ pipeline {
         echo "always run whether it is susccess or filure"
       }
 
-      susccess{
+      success{
 
           echo "i will run if success"
       }
