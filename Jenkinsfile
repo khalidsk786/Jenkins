@@ -3,14 +3,22 @@ pipeline {
     node {
     label 'Agent-1'
     }
+
+  environment{
+    COURSE = "jankins"
+  }
   }
     stages {
        
        stage ('build')
        {
          steps {
+           script{
 
-            echo "this is building"
+          echo "this is building"
+          echo $COURSE
+           }
+
          }
  
 
